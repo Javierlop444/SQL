@@ -1,0 +1,33 @@
+CREATE TABLE JavisFarm (id INTEGER PRIMARY KEY, name TEXT, cost INTEGER, iasle INTEGER, inventory TEXT);
+
+INSERT INTO javisFarm VALUES (1, "Bananas", 1.99, 1, 500);
+INSERT INTO javisFarm VALUES (2, "Apple",1.99,1,200);
+INSERT INTO javisfarm VALUES (3, "Mangos",.99,1,150);
+INSERT INTO javisfarm VALUES (4, "Oranges", .99, 1, 250);
+INSERT INTO javisfarm VALUES (5, "Coco", 2.99, 1, 100);
+INSERT INTO javisfarm VALUES (6, "Broccoli", .68, 2, 150);
+INSERT INTO javisfarm VALUES (7, "Tomato", .30, 2, 300);
+INSERT INTO javisfarm VALUES (8, "Peppers", .45,2, 400);
+INSERT INTO javisfarm VALUES (9, "Cucumbers", .69, 2,300);
+INSERT INTO javisfarm VALUES (10, "Eggplant", .50, 2,150);
+INSERT INTO javisfarm VALUES (11, "Milk",
+2.99, 3,100);
+INSERT INTO javisfarm VALUES (12, "Eggs", 3.99, 3, 200);
+INSERT INTO javisfarm VALUES (13, "Cream",2.99, 3,200);
+INSERT INTO javisfarm VALUES (14,"Cheese", 4.99,3,500);
+INSERT INTO javisfarm VALUES (15, "Yogurt", 2.99,3,200);
+
+--What ae the items selling in the store?
+SELECT * FROM JavisFarm;
+
+--What is the less expensive item to the most expensive item?
+SELECT * FROM javisFarm ORDER BY cost;
+
+--What is the inventory of the store from less to more?
+SELECT id, name FROM javisfarm ORDER BY inventory;
+
+--how many items can I find in the different iasle?
+SELECT * FROM Javisfarm order by iasle;
+
+
+
